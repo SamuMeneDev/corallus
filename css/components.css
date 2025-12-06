@@ -1,0 +1,11 @@
+@import "./variables.css";
+
+header {
+  background-color: var(--primaryCinzaPlus);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.itemNav {
+
+}

@@ -1,18 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./variables.css";
+@import "./components.css";
 
-:root {
-  --primaryColor: #000000;
-  --textHover: #808080;
-  --primaryCoral: #ff6f61;
-  --primaryCoralClaro: #ffb6af;
-  --primaryCoralMain: #eba9a4;
-  --primaryCinza: #4a4a4a;
-  --primaryCinzaPlus: #1f1f1f;
-  --primaryGelo: #f5f5f5f5;
-  --primaryGeloHover: #d6d6d6f5;
-  --primaryCoralBlack: #e05243;
-  --primaryCoralBlackHover: #c42c1b;
-}
 
 * {
   margin: 0px;
@@ -31,10 +20,7 @@ body {
 }
 
 header {
-  background-color: var(--primaryCinzaPlus);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  
   & ul {
     display: flex;
     gap: 2rem;
