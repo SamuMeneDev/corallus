@@ -189,6 +189,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  padding-top: 75px;
   gap: 2rem;
   & img {
     max-width: 90px;
@@ -280,4 +281,78 @@ footer {
 }
 .carousel-inner {
   border-radius: 7px !important;
+}
+
+
+/*MOD Lucas P.*/
+main {
+  background-color: #633737;
+  padding-bottom: 75px;
+}
+
+footer {
+  margin: 0;
+}
+
+.contentFaleConosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 250px;
+  margin-bottom: 75px;
+  color: var(--primaryGelo);
+  background-color: var(--primaryColor);
+  background-image: url("../img/Juntos-Inovando\ -\ Copia.png");
+  background-position: center;
+  font-size: medium;
+  & p {
+    width: 100%;
+  }
+}
+.membros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cardMember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  width: 45%;
+
+  font-size: large;
+  color: #fff;
+  transition: 500ms ease-in-out;
+  border-radius: 7px;
+
+  box-shadow: 1px 1px 1px var(--textHover);
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid var(--primaryGeloHover);
+  background-color: #000000;
+  &:hover {
+    box-shadow: 1px 7px 7px 2px var(--textHover);
+  }
+}
+.imgMember {
+  height: 250px;
+  width: 200px;
+  margin-inline: 16px;
+}
+.contatoTitle {
+  margin: 0;
+}
+.contato {
+  display: flex;
+  text-align: left;
+  width: 90%;
+  margin: 0;
+}
+.iconContato {
+  height: 40px;
+  width: 40px;
 }
