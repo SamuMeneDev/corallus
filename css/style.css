@@ -2,7 +2,6 @@
 @import "./variables.css";
 @import "./components.css";
 
-
 * {
   margin: 0px;
   padding: 0px;
@@ -12,98 +11,17 @@
   scrollbar-color: var(--primaryCoral) var(--primaryCinzaPlus); /* Cor do 'thumb' e 'track' */
 }
 
-#banner {
-  max-width: 170px;
-}
 body {
   background-color: var(--primaryGelo);
 }
 
-header {
-  
-  & ul {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-around;
-    & li {
-      list-style: none;
-      border-radius: 5px;
-      padding: 6px;
-      & a {
-        text-decoration: none;
-        font-size: large;
-        font-weight: 600;
-        height: max-content;
-        color: var(--primaryGelo);
-        &:hover {
-          color: var(--primaryGeloHover);
-        }
-      }
-    }
-  }
-  & .barra-pesquisa {
-    border: 3px var(--primaryGelo) solid;
-    border-radius: 5px;
-    display: flex;
-    background-color: var(--primaryColor);
-    & button {
-      background-color: var(--primaryColor);
-      border-style: none;
-      cursor: pointer;
-      padding: 5px;
-    }
-    & input {
-      background-color: var(--primaryColor);
-      color: var(--primaryGelo);
-      border-style: none;
-      outline: none;
-
-      margin: 3px;
-      border-right: 1px var(--primaryGelo) solid;
-    }
-  }
-}
-#atual {
-  border-bottom: 3px var(--primaryCoralBlack) solid;
-}
-
-#search {
-  --borderInput: 15px;
-  display: flex;
-  background-color: solid 2px var(--primaryCoralBlack);
-  width: 20%;
-  border-radius: 5px;
-  & input[type="search"] {
-    border-style: none;
-    transition: 150ms ease-in;
-    outline: none;
-    padding: 5px;
-    width: 100%;
-    font-size: medium;
-    border-top-left-radius: var(--borderInput);
-    border-bottom-left-radius: var(--borderInput);
-  }
-  & button {
-    background-color: var(--primaryCoralBlack);
-    text-align: center;
-    padding: 5px;
-    transition: 150ms ease-in;
-    cursor: pointer;
-    border-top-right-radius: var(--borderInput);
-    border-bottom-right-radius: var(--borderInput);
-    border-style: none;
-    &:hover {
-      background-color: var(--primaryCoralBlackHover);
-    }
-  }
-}
 
 main {
   display: flex;
   flex-direction: column;
-  background-color: var(--primaryGelo);
+  background-color: var(--bgProvisorio);
   color: var(--primaryColor);
+  padding-bottom: 75px;
 }
 
 .content {
@@ -115,42 +33,13 @@ main {
   min-height: 500px;
   color: var(--primaryGelo);
   background-color: var(--primaryColor);
-  background-image: url("../img/Juntos-Inovando\ -\ Copia.png");
+  background-image: url("../img/Juntos-InovandoBanner.png");
   font-size: medium;
   & p {
     width: 100%;
   }
 }
-.content-buttons {
-  margin-top: 20px;
 
-  & a.button-full {
-    background-color: var(--primaryGelo);
-    padding: 7px;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 15px;
-    text-decoration: none;
-    border-radius: 5rem;
-    color: var(--primaryColor);
-  }
-  & a.button-inverse {
-    border: 3px solid var(--primaryGelo);
-    background-color: var(--primaryColor);
-    padding: 7px;
-    text-decoration: none;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 5rem;
-    color: var(--primaryGelo);
-  }
-}
-#imgSlide {
-  max-height: 400px;
-  border-radius: 10px;
-}
 .content-text {
   display: flex;
   padding-top: 65px;
@@ -175,6 +64,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  padding-top: 75px;
   gap: 2rem;
   & img {
     max-width: 90px;
@@ -184,6 +74,7 @@ main {
     max-width: 60%;
   }
 }
+
 .itemSkill {
   display: flex;
   flex-direction: column;
@@ -202,20 +93,7 @@ main {
     box-shadow: 1px 7px 7px 2px var(--textHover);
   }
 }
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  padding-bottom: 2.5rem;
-  margin-top: 5rem;
-  gap: 20px;
 
-  background-color: var(--primaryColor);
-  color: var(--primaryGelo);
-  & h2 {
-    text-align: center;
-  }
-}
 .footer-border {
   display: flex;
   align-items: center;
@@ -225,45 +103,73 @@ footer {
   border-bottom: 2px solid var(--primaryCinza);
 }
 
-.iframe {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
 
-.siga-nos {
-  & a,
-  img {
-    max-width: 50px;
-  }
-}
-.iframe-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  & img,
-  a {
-    max-height: 150px;
-  }
-  & ul {
-    list-style-type: none;
-    & li {
-      display: grid;
-      align-items: center;
-      grid-template-columns: 40% 60%;
-      padding-left: 0px;
-      margin-bottom: 10px;
-      & img {
-        max-width: 32px;
-      }
-      & a {
-        font-weight: 400;
-        color: var(--primaryCoralMain);
-      }
-    }
-  }
-}
 .carousel-inner {
   border-radius: 7px !important;
+}
+
+
+/*MOD Lucas P.*/
+
+.contentFaleConosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 250px;
+  margin-bottom: 75px;
+  color: var(--primaryGelo);
+  background-color: var(--primaryColor);
+  background-image: url("../img/Juntos-InovandoBanner.png");
+  background-position: center;
+  font-size: medium;
+  & p {
+    width: 100%;
+  }
+}
+.membros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cardMember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  width: 45%;
+
+  font-size: large;
+  color: #fff;
+  transition: 500ms ease-in-out;
+  border-radius: 7px;
+
+  box-shadow: 1px 1px 1px var(--textHover);
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid var(--primaryGeloHover);
+  background-color: #000000;
+  &:hover {
+    box-shadow: 1px 7px 7px 2px var(--textHover);
+  }
+}
+.imgMember {
+  height: 250px;
+  width: 200px;
+  margin-inline: 16px;
+}
+.contatoTitle {
+  margin: 0;
+}
+.contato {
+  display: flex;
+  text-align: left;
+  width: 90%;
+  margin: 0;
+}
+.iconContato {
+  height: 40px;
+  width: 40px;
 }
