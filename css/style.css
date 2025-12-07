@@ -15,6 +15,9 @@ body {
   background-color: var(--primaryGelo);
 }
 
+.carousel-inner {
+  border-radius: 7px !important;
+}
 
 main {
   display: flex;
@@ -94,20 +97,6 @@ main {
   }
 }
 
-.footer-border {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px;
-  border-bottom: 2px solid var(--primaryCinza);
-}
-
-
-.carousel-inner {
-  border-radius: 7px !important;
-}
-
 /*MOD Lucas P.*/
 
 .headerSection {
@@ -140,4 +129,153 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+
+
+.projetos-lista{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#000;
+   flex-direction: column;
+  color: white;
+  padding: 50px;
+  width: 100%;
+
+
+}
+
+.footer-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  border-bottom: 2px solid var(--primaryCinza);
+}
+
+
+
+
+.main1{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color:#872318;
+  color: white;
+  padding: 10px;
+  flex-direction: row;
+  height: 720px;
+
+}
+
+.main2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color:#872318;
+  color: white;
+  padding: 10px;
+  flex-direction: row;
+  height: 720px;
+
+}
+
+
+.card {
+  margin: 30px;
+  width: 390px;
+  min-height: 400px; /* agora cresce naturalmente */
+  background-color: white;
+  padding:1px;
+  font-size: 19px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--primaryGelo);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+p{
+  padding-top: 30px;
+}
+.card>img{
+  width:100% ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+ 
+}
+
+
+
+.descri1{
+  font-size: 1.3rem;             /* texto menorzinho nql pique e equilibrado */
+  line-height: 1.5;              /* pro espaçamento entre linhas */
+  text-align: center;          
+  color: #333;                   
+  margin: 30px 40px;             /* respiru nas laterais e em cima/baixo */
+  font-weight: 400;
+}
+
+.descri1 span {
+  font-weight: 600;              
+  color: #5A00FF;                /* destaque com corrr */
+}
+
+.descri2{
+  font-size: 1.2rem;            
+  line-height: 1.3;            
+  text-align: center;          
+  color: #333;                  
+  margin: 30px 40px;            
+  font-weight: 400;
+}
+
+.descri2 span {
+  font-weight: 600;              
+  color: #0968ed;                /* destaque com corrr */
+}
+
+
+.descri{
+  font-size: 1.2rem;            
+  line-height: 1.3;            
+  text-align: center;          
+  color: #333;                  
+  margin: 30px 40px;            
+  font-weight: 400;
+}
+
+.descri4 span {
+  font-weight: 600;              
+  color: #6e06ca;                /* destaque com corrr */
+}
+
+.descri5{
+  font-size: 1.1rem;            
+  line-height: 1.2;            
+  text-align: center;          
+  color: #333;                  
+  margin: 10px 20px;            
+  font-weight: 400;
+}
+
+.descri5 span {
+  font-weight: 600;              
+  color: #e1b30d;                /* destaque com corrr */
+}
+
+.descri6{
+  font-size: 1.1rem;            
+  line-height: 1.2;            
+  text-align: center;          
+  color: #333;                  
+  margin: 10px 20px;            
+  font-weight: 400;
+}
+
+.descri6 span {
+  font-weight: 600;              
+  color: #ff0f8b;                /* destaque com corrr */
 }
