@@ -111,7 +111,7 @@ main {
 
 /*MOD Lucas P.*/
 
-.contentFaleConosco {
+.headerSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,43 +133,13 @@ main {
   align-items: center;
   justify-content: center;
 }
-.cardMember {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
 
-  width: 45%;
-
-  font-size: large;
-  color: #fff;
-  transition: 500ms ease-in-out;
-  border-radius: 7px;
-
-  box-shadow: 1px 1px 1px var(--textHover);
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid var(--primaryGeloHover);
-  background-color: #000000;
-  &:hover {
-    box-shadow: 1px 7px 7px 2px var(--textHover);
-  }
-}
 .imgMember {
   height: 250px;
-  width: 200px;
-  margin-inline: 16px;
-}
-.contatoTitle {
-  margin: 0;
 }
 .contato {
+  width: 100%;
   display: flex;
-  text-align: left;
-  width: 90%;
-  margin: 0;
-}
-.iconContato {
-  height: 40px;
-  width: 40px;
+  align-items: center;
+  flex-direction: column;
 }

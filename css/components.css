@@ -35,7 +35,7 @@ header {
 }
 
 .search-input {
-  border: 3px var(--primaryGelo) solid;
+  border: 2px var(--primaryGelo) solid;
   border-radius: 5px;
   display: flex;
   background-color: var(--primaryColor);
@@ -83,6 +83,59 @@ a.button-full {
   color: var(--primaryColor);
 }
 
+.headerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: var(--primaryGelo);
+  background-color: var(--primaryColor);
+  /*background-image: url("../img/Juntos-InovandoBanner.png");*/
+  background-position: center;
+  font-size: medium;
+}
+.listIcon {
+  list-style-type: none;
+  & li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 75%;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    & img {
+      max-width: 32px;
+    }
+    & a {
+      font-weight: 400;
+      color: var(--primaryCoralMain);
+    }
+  }
+}
+
+.cardComp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  width: 45%;
+
+  font-size: large;
+  color: #fff;
+  transition: 500ms ease-in-out;
+  border-radius: 7px;
+
+  box-shadow: 1px 1px 1px var(--textHover);
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid var(--primaryGeloHover);
+  background-color: #000000;
+  &:hover {
+    box-shadow: 1px 7px 7px 2px var(--textHover);
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -102,23 +155,6 @@ footer {
     & img,
     a {
       max-height: 150px;
-    }
-    & ul {
-      list-style-type: none;
-      & li {
-        display: grid;
-        align-items: center;
-        grid-template-columns: 40% 60%;
-        padding-left: 0px;
-        margin-bottom: 10px;
-        & img {
-          max-width: 32px;
-        }
-        & a {
-          font-weight: 400;
-          color: var(--primaryCoralMain);
-        }
-      }
     }
   }
   .siga-nos {
