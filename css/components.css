@@ -1,0 +1,166 @@
+@import "./variables.css";
+
+header {
+  background-color: var(--primaryCinzaPlus);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .logo {
+    max-width: 170px;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+
+  .itemNav {
+    list-style: none;
+    border-radius: 5px;
+    padding: 6px;
+    a {
+      text-decoration: none;
+      font-size: large;
+      font-weight: 600;
+      height: max-content;
+      color: var(--primaryGelo);
+      &:hover {
+        color: var(--primaryGeloHover);
+      }
+    }
+  }
+}
+
+.search-input {
+  border: 2px var(--primaryGelo) solid;
+  border-radius: 5px;
+  display: flex;
+  background-color: var(--primaryColor);
+  & button {
+    background-color: var(--primaryColor);
+    border-style: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  & input {
+    background-color: var(--primaryColor);
+    color: var(--primaryGelo);
+    border-style: none;
+    outline: none;
+
+    margin: 3px;
+    border-right: 1px var(--primaryGelo) solid;
+  }
+}
+
+#atual {
+  border-bottom: 3px var(--primaryCoralBlack) solid;
+}
+
+.button-inverse {
+  border: 3px solid var(--primaryGelo);
+  background-color: var(--primaryColor);
+  padding: 7px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5rem;
+  color: var(--primaryGelo);
+}
+a.button-full {
+  background-color: var(--primaryGelo);
+  padding: 7px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  border-radius: 5rem;
+  color: var(--primaryColor);
+}
+
+.headerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: var(--primaryGelo);
+  background-color: var(--primaryColor);
+  /*background-image: url("../img/Juntos-InovandoBanner.png");*/
+  background-position: center;
+  font-size: medium;
+}
+.listIcon {
+  list-style-type: none;
+  & li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 75%;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    & img {
+      max-width: 32px;
+    }
+    & a {
+      font-weight: 400;
+      color: var(--primaryCoralMain);
+    }
+  }
+}
+
+.cardComp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+  width: 45%;
+
+  font-size: large;
+  color: #fff;
+  transition: 500ms ease-in-out;
+  border-radius: 7px;
+
+  box-shadow: 1px 1px 1px var(--textHover);
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid var(--primaryGeloHover);
+  background-color: #000000;
+  &:hover {
+    box-shadow: 1px 7px 7px 2px var(--textHover);
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-bottom: 2.5rem;
+  gap: 20px;
+
+  background-color: var(--primaryColor);
+  color: var(--primaryGelo);
+  & h2 {
+    text-align: center;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    & img,
+    a {
+      max-height: 150px;
+    }
+  }
+  .siga-nos {
+    & a,
+    img {
+      max-width: 50px;
+    }
+  }
+}
