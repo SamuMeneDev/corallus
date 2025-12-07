@@ -89,7 +89,7 @@ a.button-full {
   align-items: center;
   padding: 50px;
   color: var(--primaryGelo);
-  background-color: var(--primaryColor);
+  background-color: var(--primaryCinzaPlus);
   /*background-image: url("../img/Juntos-InovandoBanner.png");*/
   background-position: center;
   font-size: medium;
@@ -119,21 +119,23 @@ a.button-full {
   align-items: center;
   text-align: center;
 
+  & .imgMember {
+    max-height: 300px;
+    border-radius: 7px;
+  }
+
   width: 45%;
 
   font-size: large;
-  color: #fff;
+  color: var(--primaryColor);
   transition: 500ms ease-in-out;
-  border-radius: 7px;
-
-  box-shadow: 1px 1px 1px var(--textHover);
-  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin: 10px;
-  border: 1px solid var(--primaryGeloHover);
-  background-color: #000000;
-  &:hover {
-    box-shadow: 1px 7px 7px 2px var(--textHover);
-  }
+
+  background-color: var(--primaryGelo);
 }
 
 footer {
@@ -163,4 +165,27 @@ footer {
       max-width: 50px;
     }
   }
+  .footer-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    border-bottom: 2px solid var(--primaryCinza);
+  }
+}
+.card {
+  margin: 30px;
+  width: 390px;
+  min-height: 400px; /* agora cresce naturalmente */
+  background-color: white;
+  padding: 1px;
+  color: var(--primaryColor);
+  font-size: 19px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--primaryGelo);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

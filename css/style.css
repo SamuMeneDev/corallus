@@ -16,13 +16,13 @@ body {
 }
 
 .carousel-inner {
-  border-radius: 7px !important;
+  border-radius: 20px !important;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  background-color: var(--bgProvisorio);
+  background-color: var(--primaryGelo);
   color: var(--primaryColor);
   padding-bottom: 75px;
 }
@@ -87,195 +87,112 @@ main {
   font-size: large;
   transition: 500ms ease-in-out;
   border-radius: 7px;
-
-  box-shadow: 1px 1px 1px var(--textHover);
   padding: 10px;
   border: 1px solid var(--primaryGeloHover);
   background-color: white;
-  &:hover {
-    box-shadow: 1px 7px 7px 2px var(--textHover);
-  }
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /*MOD Lucas P.*/
 
-.headerSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  min-height: 250px;
-  margin-bottom: 75px;
-  color: var(--primaryGelo);
-  background-color: var(--primaryColor);
-  background-image: url("../img/Juntos-InovandoBanner.png");
-  background-position: center;
-  font-size: medium;
-  & p {
-    width: 100%;
-  }
-}
 .membros {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.imgMember {
-  height: 250px;
-}
+
 .contato {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-
-
-.projetos-lista{
+/*Andre*/
+.projetos {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color:#000;
-   flex-direction: column;
-  color: white;
-  padding: 50px;
+}
+
+.grade {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.card > img {
   width: 100%;
-
-
-}
-
-.footer-border {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px;
-  border-bottom: 2px solid var(--primaryCinza);
-}
-
-
-
-
-.main1{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color:#872318;
-  color: white;
-  padding: 10px;
-  flex-direction: row;
-  height: 720px;
-
-}
-
-.main2{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color:#872318;
-  color: white;
-  padding: 10px;
-  flex-direction: row;
-  height: 720px;
-
-}
-
-
-.card {
-  margin: 30px;
-  width: 390px;
-  min-height: 400px; /* agora cresce naturalmente */
-  background-color: white;
-  padding:1px;
-  font-size: 19px;
-  text-align: center;
-  border-radius: 20px;
-  background-color: var(--primaryGelo);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-}
-
-p{
-  padding-top: 30px;
-}
-.card>img{
-  width:100% ;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
- 
 }
-
-
-
-.descri1{
-  font-size: 1.3rem;             /* texto menorzinho nql pique e equilibrado */
-  line-height: 1.5;              /* pro espaçamento entre linhas */
-  text-align: center;          
-  color: #333;                   
-  margin: 30px 40px;             /* respiru nas laterais e em cima/baixo */
+.descri1 {
+  font-size: 1.3rem; /* texto menorzinho nql pique e equilibrado */
+  line-height: 1.5; /* pro espaçamento entre linhas */
+  text-align: center;
+  color: #333;
+  margin: 30px 40px; /* respiru nas laterais e em cima/baixo */
   font-weight: 400;
 }
 
 .descri1 span {
-  font-weight: 600;              
-  color: #5A00FF;                /* destaque com corrr */
+  font-weight: 600;
+  color: #5a00ff; /* destaque com corrr */
 }
 
-.descri2{
-  font-size: 1.2rem;            
-  line-height: 1.3;            
-  text-align: center;          
-  color: #333;                  
-  margin: 30px 40px;            
+.descri2 {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  text-align: center;
+  color: #333;
+  margin: 30px 40px;
   font-weight: 400;
 }
 
 .descri2 span {
-  font-weight: 600;              
-  color: #0968ed;                /* destaque com corrr */
+  font-weight: 600;
+  color: #0968ed; /* destaque com corrr */
 }
 
-
-.descri{
-  font-size: 1.2rem;            
-  line-height: 1.3;            
-  text-align: center;          
-  color: #333;                  
-  margin: 30px 40px;            
+.descri {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  text-align: center;
+  color: #333;
+  margin: 30px 40px;
   font-weight: 400;
 }
 
 .descri4 span {
-  font-weight: 600;              
-  color: #6e06ca;                /* destaque com corrr */
+  font-weight: 600;
+  color: #6e06ca; /* destaque com corrr */
 }
 
-.descri5{
-  font-size: 1.1rem;            
-  line-height: 1.2;            
-  text-align: center;          
-  color: #333;                  
-  margin: 10px 20px;            
+.descri5 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #333;
+  margin: 10px 20px;
   font-weight: 400;
 }
 
 .descri5 span {
-  font-weight: 600;              
-  color: #e1b30d;                /* destaque com corrr */
+  font-weight: 600;
+  color: #e1b30d; /* destaque com corrr */
 }
 
-.descri6{
-  font-size: 1.1rem;            
-  line-height: 1.2;            
-  text-align: center;          
-  color: #333;                  
-  margin: 10px 20px;            
+.descri6 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #333;
+  margin: 10px 20px;
   font-weight: 400;
 }
 
 .descri6 span {
-  font-weight: 600;              
-  color: #ff0f8b;                /* destaque com corrr */
+  font-weight: 600;
+  color: #ff0f8b; /* destaque com corrr */
 }
