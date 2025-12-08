@@ -36,23 +36,25 @@ header {
 
 .search-input {
   border: 2px var(--primaryGelo) solid;
-  border-radius: 5px;
+  border-radius: 2rem;
   display: flex;
-  background-color: var(--primaryColor);
+  background-color: var(--primaryGelo);
   & button {
-    background-color: var(--primaryColor);
+    background-color: var(--coral90);
     border-style: none;
+    border-radius: 50%;
+    overflow: hidden;
     cursor: pointer;
     padding: 5px;
   }
   & input {
-    background-color: var(--primaryColor);
-    color: var(--primaryGelo);
+    background-color: var(--primaryGelo);
+    color: var(--primaryColor);
+    font-size: large;
+    border-radius: 2rem;
+    padding: 7px;
     border-style: none;
     outline: none;
-
-    margin: 3px;
-    border-right: 1px var(--primaryGelo) solid;
   }
 }
 
@@ -87,10 +89,10 @@ a.button-full {
     width: 0ch;
   }
   33% {
-    width: 32ch;
+    width: 33ch;
   }
   66% {
-    width: 32ch;
+    width: 33ch;
   }
   90% {
     width: 0ch;
@@ -111,13 +113,26 @@ a.button-full {
   align-items: flex-end;
   justify-content: center;
   font-size: 45px;
-  & p {
-    width: 32ch;
-    border-right: 5px solid;
-    white-space: nowrap;
-    overflow: hidden;
-
-    animation: escrever 10s infinite steps(32), blink 0.5s infinite alternate;
+  & div.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 38ch;
+    padding: 5px 7px;
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: black 1px 2px 5px;
+    & img {
+      max-width: 32px;
+    }
+    & p {
+      width: 33ch;
+      border-right: 5px solid;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+      animation: escrever 10s infinite steps(32), blink 0.5s infinite alternate step-end;
+    }
   }
 }
 
@@ -166,15 +181,10 @@ a.button-full {
 .cardComp {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
 
-  & .imgMember {
-    max-height: 300px;
-    border-radius: 7px;
-  }
-
-  width: 45%;
+  width: 40%;
 
   font-size: large;
   color: var(--primaryColor);
@@ -184,8 +194,21 @@ a.button-full {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin: 10px;
-
-  background-color: var(--primaryGelo);
+  & .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  & .imgMember {
+    max-height: 300px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  & h2 {
+    background-color: var(--coral70);
+    color: var(--primaryGelo);
+    border-top-right-radius: 15px;
+  }
 }
 
 footer {

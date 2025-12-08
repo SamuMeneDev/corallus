@@ -15,10 +15,10 @@
 body {
   background-color: var(--primaryGelo);
 }
+/*
+.carousel-inner {  border-radius: 20px !important;
 
-.carousel-inner {
-  /*  border-radius: 20px !important;*/
-}
+}*/
 
 main {
   display: flex;
@@ -98,7 +98,6 @@ main {
     word-wrap: normal;
   }
   & #corallus {
-    background-color: var(--primaryCinzaPlus);
     border-radius: 50%;
     overflow: hidden;
   }
@@ -111,13 +110,6 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.contato {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 /*Andre*/
 .projetos {
