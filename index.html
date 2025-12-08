@@ -426,20 +426,20 @@
 
           <h2> Entre em contato conosco pelo formulário </h2>
             
-          <form class="formulario-fale-conosco">
+          <form class="formulario-fale-conosco" method="post" action="./email.php">
             <div class="form-groups">
               <label for="nome"> Nome: </label>
-              <input id="nome" type="text" placeholder="nome..." required>
+              <input name="nome" type="text" placeholder="nome..." required>
             </div>
 
             <div class="form-groups">
               <label for="email"> Email: </label>
-              <input id="email" type="email" placeholder="email..." required>
+              <input name="email" type="email" placeholder="email..." required>
             </div>
 
             <div class="form-groups">
               <label for="assunto"> Assunto: </label>
-              <textarea id="assunto" placeholder="digite o assunto do contato..." required></textarea>
+              <textarea name="assunto" placeholder="digite o assunto do contato..." required></textarea>
             </div>
 
             <div class="fale-botoes">
