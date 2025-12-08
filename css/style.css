@@ -9,7 +9,7 @@
   box-sizing: border-box;
   font-family: /*"Noto Sans"*/ Gabarito, sans-serif !important;
   scroll-behavior: smooth;
-  scrollbar-color: var(--primaryCoral) var(--primaryCinzaPlus); /* Cor do 'thumb' e 'track' */
+  scrollbar-color: var(--coral70) var(--primaryCinza); /* Cor do 'thumb' e 'track' */
 }
 
 body {
@@ -25,7 +25,6 @@ main {
   flex-direction: column;
   background-color: var(--primaryGelo);
   color: var(--primaryColor);
-  padding-bottom: 75px;
 }
 #home {
   background-color: var(--primaryGelo);
@@ -213,6 +212,7 @@ main {
 
 #parceiros {
   padding: 2rem 0px;
+  background-color: rgb(255, 255, 255);
 }
 
 /* rafael */
@@ -228,7 +228,7 @@ main {
 .fale-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   padding: 2.5rem 1rem;
   text-align: center;
   & h2 {
