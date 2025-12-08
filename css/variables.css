@@ -1,12 +1,15 @@
 :root {
   --primaryColor: #000000;
+  --primaryColorHover: #141414;
   --primaryCinzaPlus: #1f1f1f;
   --primaryCinza: #4a4a4a;
   --textHover: #808080;
   --primaryCoralMain: #eba9a4;
   --primaryCoralClaro: #ffb6af;
   --primaryGeloHover: #d6d6d6f5;
+  --primaryGeloClaro: #ebebebf5;
   --primaryGelo: #f5f5f5f5;
+  --coral120: #6e0b00;
   --coral110: #be2d1d;
   --coral100: #872318;
   --coral90: #a30e05;

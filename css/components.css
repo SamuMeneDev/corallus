@@ -1,13 +1,18 @@
 @import "./variables.css";
 
 header {
-  background-color: var(--primaryCinzaPlus);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  .barra {
+    background-color: var(--primaryCinzaPlus);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-  .logo {
-    max-width: 170px;
+    .logo {
+      max-width: 170px;
+    }
   }
 }
 
@@ -16,7 +21,6 @@ header {
   gap: 2rem;
   align-items: center;
   justify-content: space-around;
-
   .itemNav {
     list-style: none;
     border-radius: 5px;
@@ -30,36 +34,34 @@ header {
       &:hover {
         color: var(--primaryGeloHover);
       }
+      
     }
+  }
+  .active {
+    border-bottom: 3px var(--coral90) solid;
   }
 }
 
 .search-input {
-  border: 2px var(--primaryGelo) solid;
-  border-radius: 2rem;
+  border-radius: 5rem;
   display: flex;
   background-color: var(--primaryGelo);
   & button {
     background-color: var(--coral90);
     border-style: none;
     border-radius: 50%;
-    overflow: hidden;
     cursor: pointer;
-    padding: 5px;
+    padding: 6px;
   }
   & input {
     background-color: var(--primaryGelo);
     color: var(--primaryColor);
     font-size: large;
     border-radius: 2rem;
-    padding: 7px;
+    padding: 6px;
     border-style: none;
     outline: none;
   }
-}
-
-#atual {
-  border-bottom: 3px var(--coral90) solid;
 }
 
 .button-inverse {
@@ -72,10 +74,15 @@ header {
   padding-right: 15px;
   border-radius: 5rem;
   color: var(--primaryGelo);
+  font-size: larger;
+  &:hover {
+    background-color: var(--primaryColorHover);
+  }
 }
 a.button-full {
   background-color: var(--primaryGelo);
   padding: 7px;
+  font-size: larger;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -83,6 +90,9 @@ a.button-full {
   text-decoration: none;
   border-radius: 5rem;
   color: var(--primaryColor);
+  &:hover {
+    background-color: var(--primaryGeloHover);
+  }
 }
 @keyframes escrever {
   0% {
@@ -108,7 +118,7 @@ a.button-full {
 }
 
 .pesquisa {
-  padding: 4rem;
+  padding-top: 4rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -162,9 +172,9 @@ a.button-full {
 .listIcon {
   list-style-type: none;
   & li {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template-columns: 25% 75%;
+    gap: 1rem;
     padding-left: 0px;
     margin-bottom: 10px;
     text-align: left;
@@ -184,7 +194,7 @@ a.button-full {
   align-items: flex-start;
   text-align: center;
 
-  width: 40%;
+  width: 45%;
 
   font-size: large;
   color: var(--primaryColor);
@@ -199,13 +209,20 @@ a.button-full {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    & .contatoTitle {
+      display: flex;
+      justify-content: center;
+      & img {
+        height: 32px;
+      }
+    }
   }
   & .imgMember {
     max-height: 300px;
     border-radius: 15px 0px 0px 15px;
   }
   & h2 {
-    background-color: var(--coral70);
+    background-color: var(--coral120);
     color: var(--primaryGelo);
     border-top-right-radius: 15px;
   }
@@ -225,7 +242,6 @@ footer {
   }
   .footer-content {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     & img,
     a {
