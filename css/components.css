@@ -83,29 +83,41 @@ a.button-full {
   color: var(--primaryColor);
 }
 @keyframes escrever {
-  0%, 33% {
-    content: "Corallus";
+  0% {
+    width: 0ch;
   }
-  34%, 60% {
-    content: "";
+  33% {
+    width: 32ch;
   }
-  61%, 100% {
-    content: "Diversidade de Ideias";
+  66% {
+    width: 32ch;
+  }
+  90% {
+    width: 0ch;
+  }
+  100% {
+    width: 0ch;
   }
 }
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .pesquisa {
   padding: 4rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   font-size: 45px;
-  & span {
-    position: relative;
-    &::before {
-      content: "";
-      animation: escrever 20s infinite;
-      color: var(--coral90);
-    }
+  & p {
+    width: 32ch;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: escrever 10s infinite steps(32), blink 0.5s infinite alternate;
   }
 }
 
