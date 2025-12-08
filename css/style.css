@@ -196,3 +196,85 @@ main {
   font-weight: 600;
   color: #ff0f8b; /* destaque com corrr */
 }
+
+/* rafael */
+
+.fale-conosco {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+}
+
+.fale-container {
+  width: 650px;
+  text-align: center;
+  & h2 {
+    font-size: 2rem;
+    color: var(--primaryColor);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.formulario-fale-conosco {
+  border-radius: 15px;
+  border: 3px solid var(--primaryColor);
+  padding: 2rem;
+  background-color: var(--primaryGelo);
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.27);
+  & button {
+    padding: 12px;
+    background-color: var(--primaryCoralBlack);
+    border: 2px solid var(--primaryCoralBlack);
+    border-radius: 12px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  & button:hover {
+    border: 2px solid var(--primaryCoralBlack);
+    background-color: white;
+    color: var(--primaryCoralBlack);
+  }
+}
+
+.fale-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.form-groups {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  & label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--primaryCoralBlack);
+  }
+  & input, textarea {
+    background-color: var(--primaryGelo);
+    border: 2px solid var(--primaryColor);
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--primaryCinza);
+    outline: none;
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+  & input:focus, textarea:focus {
+    border-color: var(--primaryCoralBlack);
+  }
+  & input::placeholder, textarea::placeholder {
+    color: var(--primaryCinza);
+  }
+}
+
+.form-groups textarea{
+  height: 140px;
+  resize: none;
+}
+
