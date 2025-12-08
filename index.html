@@ -518,35 +518,36 @@
           <form
             class="formulario-fale-conosco"
             method="post"
-            action="./email.php"
+            action="https://formsubmit.co/corallus.contato@gmail.com"
           >
             <div class="form-groups">
-              <label for="nome"> Nome: </label>
-              <input name="nome" type="text" placeholder="Nome..." required />
+              <label for="Nome"> Nome: </label>
+              <input name="Nome" type="text" placeholder="Nome..." required />
             </div>
 
             <div class="form-groups">
-              <label for="email"> Email: </label>
+              <label for="Email"> Email: </label>
               <input
-                name="email"
+                name="Email"
                 type="email"
                 placeholder="Email..."
                 required
               />
             </div>
             <div class="form-groups">
-              <label for="assunto"> Assunto: </label>
-              <select name="" id="">
-                <option value="">Parceria</option>
-                <option value="">Críticas e Sugestões</option>
-                <option value="">Dúvidas</option>
+              <label for="Assunto"> Assunto: </label>
+              <select name="Assunto" id="">
+                <option value="Parceria">Parceria</option>
+                <option value="Críticas e Sugestões">Críticas e Sugestões</option>
+                <option value="Dúvidas">Dúvidas</option>
               </select>
             </div>
 
             <div class="form-groups">
-              <label for="mensagem"> Mensagem: </label>
+              <label for="Mensagem"> Mensagem: </label>
               <textarea
-                name="mensagem"
+                maxlength="999"
+                name="Mensagem"
                 placeholder="Digite sua mensagem para nós..."
                 required
               ></textarea>
