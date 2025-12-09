@@ -5,13 +5,14 @@ header {
   top: 0;
   z-index: 4;
   .barra {
+    padding: 10px;
     background-color: var(--primaryCinzaPlus);
     display: flex;
     align-items: center;
     justify-content: space-around;
 
     .logo {
-      max-width: 170px;
+      max-width: 50px;
     }
   }
 }
@@ -245,7 +246,7 @@ footer {
     justify-content: space-around;
     & img,
     a {
-      max-height: 150px;
+      max-height: 200px;
     }
   }
   .siga-nos {
